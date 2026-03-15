@@ -1,0 +1,36 @@
+{
+    "config": {
+        "abort": {
+            "already_configured": "Gerät ist bereits konfiguriert"
+        },
+        "error": {
+            "cannot_connect": "Verbindung fehlgeschlagen",
+            "invalid_auth": "Ungültige Anmeldedaten",
+            "unknown": "Unerwarteter Fehler"
+        },
+        "step": {
+            "user": {
+                "data": {
+                    "host": "Host",
+                    "password": "Passwort"
+                },
+                "data_description": {
+                    "host": "IP-Adresse oder Hostname deines B-Control EM300",
+                    "password": "Passwort, das in der Weboberfläche des Zählers konfiguriert ist"
+                }
+            }
+        }
+    },
+    "options": {
+        "step": {
+            "init": {
+                "data": {
+                    "poll_interval_seconds": "Abfrageintervall (Sekunden)"
+                },
+                "data_description": {
+                    "poll_interval_seconds": "Wie oft Home Assistant neue Werte vom Zähler abfragen soll"
+                }
+            }
+        }
+    }
+}

@@ -208,7 +208,9 @@ class BControlEM300Sensor(BControlEM300Entity, SensorEntity):
         self.entity_description = entity_description
         self._metric_key = metric_key
         self._attr_name = metric_key
-        self._attr_unique_id = f"{entry.runtime_data.device_id}_{_slug(metric_key)}"
+        metric_slug = _slug(metric_key)
+        self._attr_unique_id = f"{entry.runtime_data.device_id}_{metric_slug}"
+        self._attr_suggested_object_id = metric_slug
 
     @property
     def native_value(self) -> StateType:
