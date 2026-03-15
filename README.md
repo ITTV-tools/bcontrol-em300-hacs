@@ -13,11 +13,10 @@ Custom Home Assistant integration for B-Control EM300 energy meters.
 ## Installation (HACS)
 
 1. Open HACS in Home Assistant
-2. Go to `Integrations`
-3. Add this repository as a custom repository (category: Integration)
-4. Install `BControl EM300`
-5. Restart Home Assistant
-6. Add integration: `Settings -> Devices & services -> Add integration`
+2. Add this repository as a custom repository (category: Integration)
+3. Install `BControl EM300`
+4. Restart Home Assistant
+5. Add integration: `Settings -> Devices & services -> Add integration`
 
 ## Configuration
 
