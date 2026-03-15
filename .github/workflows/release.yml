@@ -1,0 +1,28 @@
+name: Release
+
+on:
+  push:
+    tags:
+      - "v*"
+
+permissions:
+  contents: write
+
+jobs:
+  release:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Create release archive
+        run: |
+          mkdir -p dist
+          zip -r dist/bcontrol-em300-hacs.zip custom_components hacs.json README.md LICENSE
+
+      - name: Publish GitHub release
+        uses: softprops/action-gh-release@v2
+        with:
+          files: dist/bcontrol-em300-hacs.zip
+          generate_release_notes: true

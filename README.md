@@ -8,8 +8,7 @@ Custom Home Assistant integration for B-Control EM300 energy meters.
 - Polling via `bcontrolpy`
 - Automatic creation of meter sensors
 - Device registration in Home Assistant
-- Configurable polling interval via integration options
-- Excludes static values (for example serial and status) from sensor entities
+- Configurable polling interval via integration optionsrm 
 
 ## Installation (HACS)
 
