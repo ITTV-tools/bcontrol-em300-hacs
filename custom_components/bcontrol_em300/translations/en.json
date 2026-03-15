@@ -1,0 +1,36 @@
+{
+    "config": {
+        "abort": {
+            "already_configured": "Device is already configured"
+        },
+        "error": {
+            "cannot_connect": "Failed to connect",
+            "invalid_auth": "Invalid authentication",
+            "unknown": "Unexpected error"
+        },
+        "step": {
+            "user": {
+                "data": {
+                    "host": "Host",
+                    "password": "Password"
+                },
+                "data_description": {
+                    "host": "IP address or hostname of your B-Control EM300",
+                    "password": "Password configured on the meter web interface"
+                }
+            }
+        }
+    },
+    "options": {
+        "step": {
+            "init": {
+                "data": {
+                    "poll_interval_seconds": "Polling interval (seconds)"
+                },
+                "data_description": {
+                    "poll_interval_seconds": "How often Home Assistant should fetch new values from the meter"
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,15 @@
+{
+  "domain": "bcontrol_em300",
+  "name": "BControl EM300",
+  "codeowners": [
+    "@ITTV-Tools"
+  ],
+  "config_flow": true,
+  "documentation": "https://github.com/ITTV-Tools/bcontrol-em300-hacs",
+  "issue_tracker": "https://github.com/ITTV-Tools/bcontrol-em300-hacs/issues",
+  "iot_class": "local_polling",
+  "version": "0.1.0",
+  "requirements": [
+    "bcontrolpy==0.0.7"
+  ]
+}

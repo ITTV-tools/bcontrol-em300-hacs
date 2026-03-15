@@ -1,0 +1,10 @@
+{
+  "name": "BControl EM300",
+  "domains": [
+    "bcontrol_em300"
+  ],
+  "content_in_root": false,
+  "render_readme": true,
+  "iot_class": "local_polling",
+  "homeassistant": "2025.1.0"
+}
