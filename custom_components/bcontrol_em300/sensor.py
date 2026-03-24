@@ -55,7 +55,7 @@ def _description_for_key(key: str) -> BControlSensorEntityDescription:
     if "Total Energy" in key:
         return BControlSensorEntityDescription(
             key=key,
-            native_unit_of_measurement=UnitOfEnergy.KILO_WATT_HOUR,
+            native_unit_of_measurement=UnitOfEnergy.WATT_HOUR,
             device_class=SensorDeviceClass.ENERGY,
             state_class=SensorStateClass.TOTAL_INCREASING,
         )
